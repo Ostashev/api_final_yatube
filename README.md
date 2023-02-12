@@ -70,7 +70,7 @@ python3.9 manage.py runserver
 {
     "email": "",
     "username": "Name",
-    "id": 3
+    "id": 1
 }
 ```
 
@@ -101,7 +101,7 @@ python3.9 manage.py runserver
 ### Ответ:
 ```
 {
-    "id": 5,
+    "id": 1,
     "text": "Тестовый пост 1",
     "author": "Name",
     "image": null,

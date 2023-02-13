@@ -8,8 +8,12 @@ router = SimpleRouter()
 
 router.register('posts', PostViewSet)
 router.register('groups', GroupViewSet)
-router.register(r'posts/(?P<post_id>\d+)/comments', CommentViewSet)
-router.register('follow', FollowViewSet)
+router.register(
+    r'posts/(?P<post_id>\d+)/comments',
+    CommentViewSet,
+    basename='Comment'
+)
+router.register('follow', FollowViewSet, basename='Follow')
 
 urlpatterns = [
     path('v1/', include(router.urls)),
